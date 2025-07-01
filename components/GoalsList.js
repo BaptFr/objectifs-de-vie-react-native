@@ -6,11 +6,6 @@ export default function GoalsList({goals, onDelete, onPressGoal}) {
      return(
           <View style={[styles.listContainer,  styles.shadow]}>
                <FlatList
-                    contentContainerStyle= {{
-                         flexGrow: 1,
-                         justifyContent: 'center',
-                         alignItems: 'center',
-                    }}
                     data={goals}
                     extraData={goals}
                     keyExtractor={(index) => index.toString()} //conversion index en string
