@@ -6,7 +6,7 @@ export default function GoalsList({goals, onDelete, onPressGoal}) {
      return(
           <View style={[styles.listContainer,  styles.shadow]}>
                <FlatList
-                    constentContainerStyle= {{
+                    contentContainerStyle= {{
                          flexGrow: 1,
                          justifyContent: 'center',
                          alignItems: 'center',
@@ -32,14 +32,8 @@ export default function GoalsList({goals, onDelete, onPressGoal}) {
                               </Pressable>
                          </View>
                     )}
-
-                    
-                    
-                    
                />
               
-
-
                {/* {goals.map((goal, index) => (
                     
                ))} */}
